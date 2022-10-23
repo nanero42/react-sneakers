@@ -1,0 +1,174 @@
+/*#########################################################################################################
+overlay
+#########################################################################################################*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: 998;
+}
+
+/*#########################################################################################################
+drawer
+#########################################################################################################*/
+
+.drawer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,.4);
+  background-color: var(--color-white);
+  z-index: 999;
+}
+
+.drawer__title {
+  font-size: 24px;
+}
+
+.drawer__title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.drawer__order-container {
+  width: 100%;
+}
+
+.drawer__row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.drawer__unbreakable_text {
+  white-space: nowrap;
+}
+
+.drawer__dashes {
+  width: 100%;
+  border-bottom: 1px dashed var(--color-black);
+}
+
+.drawer__button-order {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-green);
+  border: 1px solid var(--color-border);
+  padding: 10px 16px;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  transform: translateX(20px);
+}
+
+.drawer__button-order:hover {
+  background-color: var(--color-white);
+
+  .drawer__button-icon {
+    transform: translateX(10px);
+  }
+}
+
+.drawer__button-icon {
+  transition: all .1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drawer__cost {
+  margin-bottom: 10px;
+}
+
+.drawer__button-text {
+  margin-right: 6px;
+}
+
+.drawer__container {
+  overflow: auto;
+  margin-bottom: 12px;
+}
+
+/*#########################################################################################################
+cart
+#########################################################################################################*/
+
+.cart__list {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.cart__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.cart__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.cart__item:last-child {
+  margin-bottom: 64px;
+}
+
+.cart__img {
+  border-radius: 6px;
+}
+
+.cart__descr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cart__paragraph {
+  text-align: justify;
+}
+
+.cart__button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--color-white);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  transition: all .1s;
+}
+
+.cart__button:hover {
+  background-color: var(--color-border);
+}
+
+.cart__button:hover path {
+  fill: var(--color-white);
+}
