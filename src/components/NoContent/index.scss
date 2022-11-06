@@ -1,0 +1,12 @@
+.no-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.no-content__title {
+  font-size: 26px;
+  padding: 12px 0;
+}

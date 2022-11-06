@@ -8,6 +8,8 @@ const EIcon = {
   'search': 'search',
   'cross': 'cross',
   'arrowRight': 'arrowRight',
+  'emptyCart': 'emptyCart',
+  'noData': 'noData',
 }
 
 Object.freeze(EIcon);

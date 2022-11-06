@@ -1,2 +1,27 @@
-https://www.youtube.com/watch?v=bfj4lEyc4w8&list=PL0FGkDGJQjJEos_0yVkbKjsQ9zGVy3dG7&index=2
-33:11
+https://www.youtube.com/watch?v=J22CdUt5OOs&list=PL0FGkDGJQjJEos_0yVkbKjsQ9zGVy3dG7&index=5
+1.14.48
+
+TODO:
++ сделать highlight при поиска товара
+
+- сделать добавление товара в localStorage
+- сделать dark mode toggle component
+- при перезагрузке стр, галочка "товар добавлен" спадает
+- сделать поиск по товарам case insensetive (но тогда возникает проблема с highlight);
+- сделать поиск по товарам не только по полю descr, но и по остальным: cost (сделать select?)
+- исправить работу поиска: сейчас отправляется запрос на фильтрацию при вводе
+каждого символа. Нужно сделать так, чтобы input ждал полсекунды после остановки ввода,
+после чего запускал один запрос с value из input.
+- когда поле поиска активно, при нажатии на tab фокус должен переместиться на крестик
+- подстветка кнопок бордером при табуляции
+- переделать кнопку удаления элемента из корзины: когда кнопка удаления нажата,
+она должна стать неактивной до завершения delete-request
+- сделать всплывашку с текстом ошибки для ошибок запроса
+- inline svg caching (https://www.filamentgroup.com/lab/inlining-cache.html)
+- запилить internationalization
+
+
+
+https://www.youtube.com/watch?v=J22CdUt5OOs&list=PL0FGkDGJQjJEos_0yVkbKjsQ9zGVy3dG7&index=5
+42.00 объясняет как легко сделать livesearch input
+items.filter(item => item.descr.includes(searchValue)).map(item => <Card />)

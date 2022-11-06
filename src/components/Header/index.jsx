@@ -2,7 +2,12 @@ import EIcon from "../../consts";
 import Icon from "../Icon";
 import './index.scss';
 
-export default function Header() {
+export default function Header({isCartOpen, setIsCartOpen}) {
+
+  const openCart = () => {
+    setIsCartOpen(!isCartOpen);
+  }
+
   return <header className="header">
     <div className="header__container">
       <div className="header__logo-container">
@@ -14,8 +19,10 @@ export default function Header() {
       </div>
       <nav className="header__nav">
         <ul className="header__list">
-          <li className="header__item">
-            <Icon type={EIcon.cart} />
+          <li className="header__item header__item-cup" onClick={openCart}>
+            <div className="header__item-icon">
+              <Icon type={EIcon.cart} />
+            </div>
             <span>34$</span>
           </li>
           <li className="header__item">

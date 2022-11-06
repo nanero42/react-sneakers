@@ -37,6 +37,14 @@
   justify-content: center;
 }
 
+.header__item-cup {
+  cursor: pointer;
+}
+
 .header__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.header__item-icon {
   margin-right: 6px;
 }
